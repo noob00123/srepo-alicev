@@ -8,7 +8,7 @@ aria2c --enable-rpc --check-certificate=false \
 
    --daemon=true --allow-overwrite=true --max-overall-download-limit=0 --bt-tracker="[$tracker_list]"\
 
-   --max-overall-upload-limit=1K --max-concurrent-downloads=15 --continue=true \
+   --max-overall-upload-limit=1K --max-concurrent-downloads=7 --continue=true \
 
    --peer-id-prefix=-qB4360- --user-agent=qBittorrent/4.3.6 --peer-agent=qBittorrent/4.3.6 \
 
