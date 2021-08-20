@@ -134,7 +134,7 @@ class qbittorrent:
             tor_info = tor_info[0]
             if tor_info.state == "metaDL":
                 self.stalled_time = time.time()
-                if time.time() - self.meta_time >= 6000000000000000000:
+                if time.time() - self.meta_time >= 600000000:
                     self.listener.onDownloadError("Dead Torrent!")
                     self.client.torrents_delete(torrent_hashes=self.ext_hash, delete_files=True)
                     self.updater.cancel()
